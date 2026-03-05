@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annick Raharilala - Fullstack Web Developer</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="app">
+        <div class="background-gradient"></div>
+        <div class="tech-grid"></div>
+
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">A.F.M</div>
+
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="typing-text">RAHARILALA Annick </span>
+                        </h1>
+                        <p class="hero-subtitle">Self-taught Fullstack Web Developer specializing in Laravel, PHP and Vue.js</p>
+                        <p class="hero-meta">Age: 22 | Status: Married</p>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+                                View Projects
+                            </button>
+                            <a href="./asset/raharilala.fifaliana.pdf" download class="btn btn-secondary">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="photo-placeholder">
+                            <img src="profile.jpg" alt="Portrait Profile ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-container">
+                    <div class="about-text">
+                        <div class="holographic-card">
+                            <p>Hello! I'm <span class="text-cyan">Annick Fifaliana Mitia RAHARILALA</span>, a passionate self-taught fullstack web developer who believes that the best code is written with purpose and creativity.</p>
+                            <p>My journey into web development started with curiosity and evolved into a full-blown passion. I specialize in building robust, scalable applications using <span class="text-orange">Laravel</span>, <span class="text-blue">PHP</span>, and <span class="text-green">Vue.js</span>.</p>
+                            <p>What drives me is the ability to transform complex problems into elegant solutions. Every line of code I write is a step towards building something meaningful and impactful.</p>
+                        </div>
+                    </div>
+                    <div class="about-cards">
+                        <div class="tech-card">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3"></polyline>
+                                </svg>
+                            </div>
+                            <h3>Clean Code</h3>
+                            <p>Writing maintainable, scalable, and efficient code is my priority</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <path d="M12 1v6m0 6v6"></path>
+                                    <path d="M4.22 4.22l4.24 4.24m0 5.08l-4.24 4.24"></path>
+                                    <path d="M1v6h6m6 0h6"></path>
+                                    <path d="M19.78 4.22l-4.24 4.24m0 5.08l4.24 4.24"></path>
+                                    <path d="M23 12v6h-6m-6 0h-6"></path>
+                                </svg>
+                            </div>
+                            <h3>Problem Solver</h3>
+                            <p>Turning complex challenges into simple, elegant solutions</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12.5 1H4a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V12.5"></path>
+                                    <path d="M16 1v7"></path>
+                                    <path d="M8 14v4"></path>
+                                    <path d="M12 14v4"></path>
+                                    <path d="M16 14v4"></path>
+                                </svg>
+                            </div>
+                            <h3>Fast Learner</h3>
+                            <p>Constantly evolving and adapting to new technologies</p>
+                        </div>
+                        <div class="tech-card">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </div>
+                            <h3>Passionate</h3>
+                            <p>Driven by love for code and building great products</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-group">
+                        <h3>Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Laravel</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PHP</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 92%"></div>
+                                </div>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">MySQL</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Vue.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 93%"></div>
+                                </div>
+                                <span class="skill-percent">93%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <span class="skill-name">Git/GitHub</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">REST APIs</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 89%"></div>
+                                </div>
+                                <span class="skill-percent">89%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-fill" style="width: 86%"></div>
+                                </div>
+                                <span class="skill-percent">86%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing some of my best work in fullstack development</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image gradient-cyan-blue">1</div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Full-featured online store with payment integration, inventory management, and admin dashboard.</p>
+                            <div class="tech-tags">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                                <span>Stripe</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image gradient-orange-red">2</div>
+                        <div class="project-content">
+                            <h3>Task Management System</h3>
+                            <p>Collaborative project management tool with real-time updates and team collaboration features.</p>
+                            <div class="tech-tags">
+                                <span>PHP</span>
+                                <span>Vue.js</span>
+                                <span>WebSockets</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image gradient-green-emerald">3</div>
+                        <div class="project-content">
+                            <h3>Restaurant Booking App</h3>
+                            <p>Online reservation system with table management, menu display, and customer reviews.</p>
+                            <div class="tech-tags">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>Tailwind</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image gradient-purple-pink">4</div>
+                        <div class="project-content">
+                            <h3>CMS Platform</h3>
+                            <p>Custom content management system with drag-drop builder and SEO optimization tools.</p>
+                            <div class="tech-tags">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>TinyMCE</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image gradient-blue-indigo">5</div>
+                        <div class="project-content">
+                            <h3>API Gateway Service</h3>
+                            <p>Microservices architecture with RESTful APIs, authentication, and rate limiting.</p>
+                            <div class="tech-tags">
+                                <span>Laravel</span>
+                                <span>JWT</span>
+                                <span>Redis</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image gradient-yellow-orange">6</div>
+                        <div class="project-content">
+                            <h3>Real Estate Portal</h3>
+                            <p>Property listing platform with advanced search filters, virtual tours, and agent dashboard.</p>
+                            <div class="tech-tags">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>Maps API</span>
+                                <span>MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-all-projects">
+                    <button class="btn btn-primary">View All Projects</button>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="experience">
+                <h2 class="section-title">My Journey</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <h3>2021 - Learning Phase</h3>
+                            <p>Started self-teaching web development with HTML, CSS, and JavaScript fundamentals.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <h3>2022 - PHP & Laravel</h3>
+                            <p>Mastered PHP basics and began building projects with Laravel framework.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <h3>2023 - Frontend Mastery</h3>
+                            <p>Specialized in Vue.js and built multiple full-featured applications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-card">
+                            <h3>2024 - Professional Developer</h3>
+                            <p>Building production-ready applications and mentoring other developers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="contact">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's build something amazing together</p>
+
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="holographic-card">
+                            <h3>Contact Information</h3>
+                            <a href="mailto:contact@annickraharilala.dev" class="contact-item">
+                                <div class="contact-icon">📧</div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">contact@annickraharilala.dev</div>
+                                </div>
+                            </a>
+                            <a href="tel:+261xxxxxxxxx" class="contact-item">
+                                <div class="contact-icon">📱</div>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <div class="contact-value">+261 XX XX XXX XX</div>
+                                </div>
+                            </a>
+                            <div class="contact-item">
+                                <div class="contact-icon">📍</div>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value">Madagascar</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="holographic-card">
+                            <h3>Follow Me</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/mitia017" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+                                <a href="https://www.linkedin.com/in/fifaliana-raharilala/" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                                <a href="https://www.facebook.com/michel.rhl" target="_blank" rel="noopener noreferrer" class="social-link">Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="holographic-card">
+                        <h3>Send a Message</h3>
+                        <form class="contact-form" onsubmit="handleContactForm(event)">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-text">
+                    © 2024 RAHARILALA Annick Fifaliana Mitia. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="mailto:raharilala.fifaliana@gmail.com">Email</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
