@@ -133,8 +133,12 @@ function handleContactForm(event) {
 
     form.reset();
 
-    alert('Thank you for your message! I will get back to you as soon as possible.');
-}
+    Swal.fire({
+        title: "Merci de m'avoir contacté!",
+        text: "Merci pour votre message ! Je vous répondrai dès que possible.",
+        icon: "success"
+    });
+} 
 
 function downloadCV() {
     alert('CV download feature coming soon! Please contact me directly for my CV.');
