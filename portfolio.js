@@ -128,9 +128,15 @@ function handleContactForm(event) {
         subject: form.querySelector('#subject').value,
         message: form.querySelector('#message').value
     };
+    const jsonData = JSON.stringify(data, null, 2);
 
-    console.log('Form submitted:', formData);
-
+    const blob = new Blob([jsonData], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'formulaire.json';
+    a.click();
+    URL.revokeObjectURL(url);
     form.reset();
 
     Swal.fire({
